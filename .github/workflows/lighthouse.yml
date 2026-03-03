@@ -1,0 +1,34 @@
+name: Lighthouse Audit
+
+on:
+  push:
+    branches: [master]
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Wait for GitHub Pages deployment
+        run: sleep 60
+
+      - name: Run Lighthouse
+        id: lighthouse
+        uses: treosh/lighthouse-ci-action@v12
+        with:
+          urls: |
+            https://al-amin.github.io/
+          configPath: .lighthouserc.json
+          uploadArtifacts: true
+
+      - name: Check scores
+        run: |
+          echo "Lighthouse audit complete"
+          echo "Check artifacts for detailed scores"

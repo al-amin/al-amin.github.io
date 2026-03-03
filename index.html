@@ -1,29 +1,598 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Al-Amin's Personal Diary </title>
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Al-Amin Asif!</h1>
-				<p>I'm best known as the horrible coder  <em> In the world </em> -Don't trust me. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:encrypt.h@gmail.com">email</a></li>
-        		<li><a href="https://github.com/al-amin">github.com/al-amin</a></li>
-			</ul>
-		</footer>
-	</body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Al Amin — AI Engineer | MCP Architect | GenAI Platform Builder</title>
+  <meta name="description" content="AI Engineer with 10+ years experience building production AI systems. Enterprise MCP Server Collection (209+ tools), GenAI Lab core contributor, Claude Code Champion. Munich, Germany.">
+  <meta name="author" content="Al Amin">
+  <link rel="canonical" href="https://al-amin.github.io/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Al Amin — AI Engineer | MCP Architect">
+  <meta property="og:description" content="AI Engineer building production AI systems at enterprise scale. 209+ AI tools, RAG pipelines, GenAI platforms.">
+  <meta property="og:url" content="https://al-amin.github.io/">
+  <meta property="og:site_name" content="Al Amin">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Al Amin — AI Engineer | MCP Architect">
+  <meta name="twitter:description" content="AI Engineer building production AI systems at enterprise scale. 209+ AI tools, RAG pipelines, GenAI platforms.">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Al Amin",
+    "url": "https://al-amin.github.io",
+    "jobTitle": "AI Engineer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Allianz Technology"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Munich",
+      "addressCountry": "DE"
+    },
+    "sameAs": [
+      "https://github.com/al-amin",
+      "https://www.linkedin.com/in/alaminse/"
+    ],
+    "knowsAbout": ["AI Engineering", "GenAI", "MCP", "RAG", "DevOps", "Cloud Infrastructure"]
+  }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Skip to content -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo" aria-label="Al Amin — Home">AA</a>
+      <div class="nav__links" role="list">
+        <a href="#about" class="nav__link" role="listitem">About</a>
+        <a href="#projects" class="nav__link" role="listitem">Projects</a>
+        <a href="#skills" class="nav__link" role="listitem">Skills</a>
+        <a href="#experience" class="nav__link" role="listitem">Experience</a>
+        <a href="#certifications" class="nav__link" role="listitem">Certs</a>
+        <a href="#contact" class="nav__link" role="listitem">Contact</a>
+      </div>
+      <button class="nav__hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="mobile-menu" class="nav__mobile" role="list">
+      <a href="#about" class="nav__link" role="listitem">About</a>
+      <a href="#projects" class="nav__link" role="listitem">Projects</a>
+      <a href="#skills" class="nav__link" role="listitem">Skills</a>
+      <a href="#experience" class="nav__link" role="listitem">Experience</a>
+      <a href="#certifications" class="nav__link" role="listitem">Certs</a>
+      <a href="#contact" class="nav__link" role="listitem">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main">
+
+    <!-- Hero -->
+    <section id="hero" class="hero section">
+      <div class="container">
+        <div class="hero__content">
+          <p class="hero__greeting">Hi, my name is</p>
+          <h1 class="hero__name">Al Amin</h1>
+          <p class="hero__title">
+            <span id="typing-text"></span><span class="hero__cursor" aria-hidden="true"></span>
+            <noscript>AI Engineer | MCP Architect | GenAI Platform Builder</noscript>
+          </p>
+          <div class="hero__ctas">
+            <a href="#projects" class="btn btn--primary">View My Work</a>
+            <a href="#contact" class="btn btn--outline">Get In Touch</a>
+          </div>
+          <div class="hero__socials">
+            <a href="https://github.com/al-amin" class="hero__social" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/alaminse/" class="hero__social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="mailto:encrypt.h@gmail.com" class="hero__social" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section section--alt">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 class="section__title">About Me</h2>
+        </div>
+        <div class="about__grid">
+          <div class="about__text reveal">
+            <p>AI-focused Software Engineer with 10+ years of experience building production systems that bridge the gap between AI prototyping and enterprise deployment. Based in Munich, I specialize in Generative AI, RAG pipelines, and MCP (Model Context Protocol) architecture.</p>
+            <p>Currently at Allianz Technology, I'm a core contributor to the enterprise GenAI Lab platform — shipping production features like AI-powered chat suggestions and agent onboarding systems. I also architected an enterprise MCP Server Collection integrating 9 systems with 209+ AI tools.</p>
+            <p>Recognized as a Claude Code Champion within Allianz's global Anthropic partnership, I drive AI-assisted development and MCP adoption across the organization. My DevOps background gives me a unique advantage: I understand production systems, scalability, and security that most AI engineers lack.</p>
+          </div>
+          <div class="metrics reveal">
+            <div class="metric">
+              <span class="metric__value" data-count="209">209+</span>
+              <span class="metric__label">AI Tools Built</span>
+            </div>
+            <div class="metric">
+              <span class="metric__value">42x</span>
+              <span class="metric__label">Faster Search</span>
+            </div>
+            <div class="metric">
+              <span class="metric__value">90%</span>
+              <span class="metric__label">Context Reduction</span>
+            </div>
+            <div class="metric">
+              <span class="metric__value">10+</span>
+              <span class="metric__label">Years Experience</span>
+            </div>
+            <div class="metric">
+              <span class="metric__value">9</span>
+              <span class="metric__label">Systems Integrated</span>
+            </div>
+            <div class="metric">
+              <span class="metric__value">100+</span>
+              <span class="metric__label">Developers Served</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 class="section__title">Featured Projects</h2>
+          <p class="section__subtitle">Production AI systems built at enterprise scale</p>
+        </div>
+        <div class="projects__grid">
+
+          <!-- Featured: MCP Server Collection -->
+          <article class="project-card project-card--featured reveal">
+            <div class="project-card__header">
+              <h3 class="project-card__title">Enterprise MCP Server Collection</h3>
+              <span class="project-card__badge">Featured</span>
+            </div>
+            <p class="project-card__desc">Multi-server Model Context Protocol platform integrating 9 enterprise systems into a unified AI assistant. Features Confluence RAG with pgvector semantic search, AI-powered ServiceNow knowledge search, suite tool aggregation, full-stack chat interface with real-time streaming, and a browser extension for enterprise GenAI platform integration.</p>
+            <div class="project-card__metrics">
+              <span>209+ AI tools</span>
+              <span>60-80% token reduction</span>
+              <span>42x faster search</span>
+              <span>90% context reduction</span>
+            </div>
+            <div class="project-card__tech">
+              <span class="pill">Python</span>
+              <span class="pill">TypeScript</span>
+              <span class="pill">React</span>
+              <span class="pill">Next.js 15</span>
+              <span class="pill">PostgreSQL</span>
+              <span class="pill">pgvector</span>
+              <span class="pill">MCP SDK</span>
+              <span class="pill">AWS Bedrock</span>
+              <span class="pill">Azure</span>
+            </div>
+          </article>
+
+          <!-- GenAI Lab Platform -->
+          <article class="project-card reveal">
+            <div class="project-card__header">
+              <h3 class="project-card__title">GenAI Lab Platform</h3>
+              <span class="project-card__badge">Core Contributor</span>
+            </div>
+            <p class="project-card__desc">Shipped production features to enterprise GenAI platform: AI-powered context-aware chat suggestion system with Azure OpenAI o3-mini, agent welcome message system for personalized onboarding UX, and architected the SharePoint knowledge connector foundation for enterprise document RAG.</p>
+            <div class="project-card__metrics">
+              <span>3,000+ lines</span>
+              <span>61 commits</span>
+              <span>Full-stack delivery</span>
+            </div>
+            <div class="project-card__tech">
+              <span class="pill">Python</span>
+              <span class="pill">Angular</span>
+              <span class="pill">TypeScript</span>
+              <span class="pill">Azure OpenAI</span>
+            </div>
+          </article>
+
+          <!-- RAG Hackathon -->
+          <article class="project-card reveal">
+            <div class="project-card__header">
+              <h3 class="project-card__title">GenAI Hackathon RAG App</h3>
+              <span class="project-card__badge">3rd Prize</span>
+            </div>
+            <p class="project-card__desc">Production-ready Retrieval-Augmented Generation application that secured 3rd prize competing against 50+ teams globally. Built with Azure OpenAI, embeddings, and vector databases with delta-sync indexing and smart chunking.</p>
+            <div class="project-card__tech">
+              <span class="pill">Azure OpenAI</span>
+              <span class="pill">RAG</span>
+              <span class="pill">Embeddings</span>
+              <span class="pill">Vector DB</span>
+              <span class="pill">Python</span>
+            </div>
+          </article>
+
+          <!-- CI/CD Governance -->
+          <article class="project-card reveal">
+            <div class="project-card__header">
+              <h3 class="project-card__title">Enterprise CI/CD Governance</h3>
+            </div>
+            <p class="project-card__desc">Automated governance framework with 25+ GitHub Actions workflows and 12 Python scripts serving 15+ teams and 100+ developers. Features 8 quality gates per PR, multi-environment deployment orchestration, and compliance-grade evidence collection.</p>
+            <div class="project-card__metrics">
+              <span>15+ teams</span>
+              <span>100+ developers</span>
+              <span>100GB+ artifacts</span>
+            </div>
+            <div class="project-card__tech">
+              <span class="pill">Python</span>
+              <span class="pill">GitHub Actions</span>
+              <span class="pill">JIRA</span>
+              <span class="pill">Teams</span>
+            </div>
+          </article>
+
+          <!-- Open Source: MCP Teams -->
+          <article class="project-card reveal">
+            <div class="project-card__header">
+              <h3 class="project-card__title">MCP MS Teams Integration</h3>
+              <span class="project-card__badge">Open Source</span>
+            </div>
+            <p class="project-card__desc">AI-to-Teams messaging via Model Context Protocol. Features rich markdown messaging, interactive Adaptive Cards, priority notifications, and automatic rate limiting.</p>
+            <div class="project-card__tech">
+              <span class="pill">Python</span>
+              <span class="pill">MCP</span>
+              <span class="pill">Adaptive Cards</span>
+            </div>
+            <a href="https://github.com/al-amin/outlook-mcp-server" class="project-card__link" target="_blank" rel="noopener noreferrer">
+              View on GitHub
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section section--alt">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 class="section__title">Technical Skills</h2>
+        </div>
+        <div class="skills__grid">
+          <div class="skill-category reveal">
+            <h3 class="skill-category__title">AI &amp; GenAI</h3>
+            <div class="skill-category__pills">
+              <span class="pill">Generative AI</span>
+              <span class="pill">LLMs</span>
+              <span class="pill">RAG</span>
+              <span class="pill">MCP</span>
+              <span class="pill">Prompt Engineering</span>
+              <span class="pill">AI Agents</span>
+              <span class="pill">Azure OpenAI</span>
+              <span class="pill">AWS Bedrock</span>
+              <span class="pill">pgvector</span>
+              <span class="pill">Embeddings</span>
+              <span class="pill">Semantic Search</span>
+              <span class="pill">LLMOps</span>
+            </div>
+          </div>
+          <div class="skill-category reveal">
+            <h3 class="skill-category__title">Programming &amp; Frameworks</h3>
+            <div class="skill-category__pills">
+              <span class="pill">Python</span>
+              <span class="pill">TypeScript</span>
+              <span class="pill">JavaScript</span>
+              <span class="pill">Java</span>
+              <span class="pill">SQL</span>
+              <span class="pill">React</span>
+              <span class="pill">Next.js</span>
+              <span class="pill">Angular</span>
+              <span class="pill">Node.js</span>
+              <span class="pill">FastAPI</span>
+              <span class="pill">Pydantic</span>
+            </div>
+          </div>
+          <div class="skill-category reveal">
+            <h3 class="skill-category__title">Cloud &amp; Infrastructure</h3>
+            <div class="skill-category__pills">
+              <span class="pill">AWS</span>
+              <span class="pill">Azure</span>
+              <span class="pill">Docker</span>
+              <span class="pill">Kubernetes</span>
+              <span class="pill">Terraform</span>
+              <span class="pill">Azure Synapse</span>
+              <span class="pill">Azure Data Factory</span>
+              <span class="pill">Databricks</span>
+            </div>
+          </div>
+          <div class="skill-category reveal">
+            <h3 class="skill-category__title">Data Engineering</h3>
+            <div class="skill-category__pills">
+              <span class="pill">Apache Kafka</span>
+              <span class="pill">Apache Flink</span>
+              <span class="pill">PostgreSQL</span>
+              <span class="pill">MongoDB</span>
+              <span class="pill">Oracle</span>
+              <span class="pill">ETL Pipelines</span>
+              <span class="pill">Event-Driven Architecture</span>
+            </div>
+          </div>
+          <div class="skill-category reveal">
+            <h3 class="skill-category__title">DevOps &amp; Security</h3>
+            <div class="skill-category__pills">
+              <span class="pill">GitHub Actions</span>
+              <span class="pill">Jenkins</span>
+              <span class="pill">CI/CD</span>
+              <span class="pill">Git</span>
+              <span class="pill">Security Audits</span>
+              <span class="pill">SonarQube</span>
+              <span class="pill">Checkmarx</span>
+              <span class="pill">Compliance</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 class="section__title">Experience</h2>
+        </div>
+        <div class="timeline">
+
+          <!-- Current Role -->
+          <div class="timeline__item reveal">
+            <div class="timeline__dot"></div>
+            <div class="timeline__header">
+              <h3 class="timeline__role">DevOps Engineer | Security Champion</h3>
+              <p class="timeline__company">Allianz Technology — Munich, Germany</p>
+              <p class="timeline__date">07/2022 – Present</p>
+            </div>
+            <ul class="timeline__bullets">
+              <li>Built enterprise MCP Server Collection integrating 9 systems (209+ AI tools) — Confluence RAG with pgvector, ServiceNow AI search (42x faster), suite tool aggregation (90% context reduction)</li>
+              <li>Core contributor to GenAI Lab platform — shipped AI chat suggestions (Azure OpenAI, 3,000+ lines), agent onboarding UX (61 commits), architected SharePoint knowledge connector</li>
+              <li>Claude Code Champion within Allianz's global Anthropic partnership — driving AI-assisted development and MCP adoption</li>
+              <li>Won 3rd prize in GenAI Hackathon (50+ teams) with production-ready RAG application</li>
+              <li>Architected CI/CD governance framework (25+ workflows) serving 15+ teams and 100+ developers</li>
+              <li>Built full-stack AI assistant (React, Next.js 15, TypeScript) with real-time streaming and dynamic model switching</li>
+              <li>Led Security Champion initiatives — reduced vulnerabilities 35% through automated scanning</li>
+              <li>Architected Kafka-based event streaming and Apache Flink data processing pipelines</li>
+            </ul>
+            <div class="timeline__tech">
+              <span class="pill">Python</span>
+              <span class="pill">TypeScript</span>
+              <span class="pill">React</span>
+              <span class="pill">MCP</span>
+              <span class="pill">Azure OpenAI</span>
+              <span class="pill">RAG</span>
+              <span class="pill">Kafka</span>
+              <span class="pill">Kubernetes</span>
+            </div>
+          </div>
+
+          <!-- AGCS -->
+          <div class="timeline__item reveal">
+            <div class="timeline__dot"></div>
+            <div class="timeline__header">
+              <h3 class="timeline__role">Software Engineer | DevOps Engineer</h3>
+              <p class="timeline__company">Allianz Global Corporate &amp; Specialty — Munich, Germany</p>
+              <p class="timeline__date">12/2019 – 07/2022</p>
+            </div>
+            <ul class="timeline__bullets">
+              <li>Contributed to software and architectural design for enterprise-scale applications</li>
+              <li>Improved CI/CD pipeline efficiency, reducing build times across DevOps workflows</li>
+              <li>Automated Change &amp; Release processes via ServiceNow and CDC Qlik/Attunity Replicate</li>
+            </ul>
+            <div class="timeline__tech">
+              <span class="pill">Python</span>
+              <span class="pill">Java</span>
+              <span class="pill">Jenkins</span>
+              <span class="pill">Docker</span>
+              <span class="pill">AWS</span>
+            </div>
+          </div>
+
+          <!-- Working Student -->
+          <div class="timeline__item reveal">
+            <div class="timeline__dot"></div>
+            <div class="timeline__header">
+              <h3 class="timeline__role">Working Student DevOps Engineer</h3>
+              <p class="timeline__company">Allianz Global Corporate &amp; Specialty — Munich, Germany</p>
+              <p class="timeline__date">09/2019 – 12/2019</p>
+            </div>
+            <ul class="timeline__bullets">
+              <li>Developed DevOps automation and implemented Splunk RabbitMQ message brokers POC from requirements to production</li>
+            </ul>
+          </div>
+
+          <!-- Freelance -->
+          <div class="timeline__item reveal">
+            <div class="timeline__dot"></div>
+            <div class="timeline__header">
+              <h3 class="timeline__role">Freelance Software Developer</h3>
+              <p class="timeline__company">BDEMR Solutions Corp. — Remote</p>
+              <p class="timeline__date">03/2017 – 09/2019</p>
+            </div>
+            <ul class="timeline__bullets">
+              <li>Architected system applications using Microservice patterns with full ownership of independent services</li>
+            </ul>
+          </div>
+
+          <!-- Senior SE -->
+          <div class="timeline__item reveal">
+            <div class="timeline__dot"></div>
+            <div class="timeline__header">
+              <h3 class="timeline__role">Senior Software Engineer</h3>
+              <p class="timeline__company">BDEMR Solutions Corp. — Dhaka, Bangladesh</p>
+              <p class="timeline__date">08/2015 – 03/2017</p>
+            </div>
+            <ul class="timeline__bullets">
+              <li>Led technical architecture for medical records platform — migrated Polymer, unified multiple applications, mentored developers</li>
+            </ul>
+          </div>
+
+          <!-- SRA -->
+          <div class="timeline__item reveal">
+            <div class="timeline__dot"></div>
+            <div class="timeline__header">
+              <h3 class="timeline__role">Software Engineer</h3>
+              <p class="timeline__company">SRA Enterprise — Dhaka, Bangladesh</p>
+              <p class="timeline__date">11/2014 – 08/2015</p>
+            </div>
+            <ul class="timeline__bullets">
+              <li>Developed features and provided technical support for medical domain applications</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications" class="section section--alt">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 class="section__title">Certifications</h2>
+        </div>
+        <div class="certs__grid">
+          <div class="cert-card reveal">
+            <div class="cert-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            </div>
+            <div>
+              <p class="cert-card__title">Azure Administrator Associate (AZ-104)</p>
+              <p class="cert-card__issuer">Microsoft</p>
+            </div>
+          </div>
+          <div class="cert-card reveal">
+            <div class="cert-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            </div>
+            <div>
+              <p class="cert-card__title">Azure Fundamentals (AZ-900)</p>
+              <p class="cert-card__issuer">Microsoft</p>
+            </div>
+          </div>
+          <div class="cert-card reveal">
+            <div class="cert-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            </div>
+            <div>
+              <p class="cert-card__title">Azure AI Certification</p>
+              <p class="cert-card__issuer">Microsoft</p>
+            </div>
+          </div>
+          <div class="cert-card reveal">
+            <div class="cert-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+            </div>
+            <div>
+              <p class="cert-card__title">Claude Code Champion</p>
+              <p class="cert-card__issuer">Anthropic — Allianz Global AI Partnership</p>
+            </div>
+          </div>
+          <div class="cert-card reveal">
+            <div class="cert-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            </div>
+            <div>
+              <p class="cert-card__title">SAFe DevOps Certified</p>
+              <p class="cert-card__issuer">Scaled Agile</p>
+            </div>
+          </div>
+          <div class="cert-card reveal">
+            <div class="cert-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+            </div>
+            <div>
+              <p class="cert-card__title">CS50: Introduction to Computer Science</p>
+              <p class="cert-card__issuer">Harvard University</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section__header reveal" style="text-align: center;">
+          <h2 class="section__title" style="display: inline-block;">Get In Touch</h2>
+        </div>
+        <div class="contact__content reveal">
+          <p class="contact__text">I'm interested in AI Engineering, GenAI, and MCP architecture roles in the Munich area. Whether you have a position that matches my background or want to discuss AI systems at enterprise scale, feel free to reach out.</p>
+          <div class="contact__links">
+            <a href="mailto:encrypt.h@gmail.com" class="contact__link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              encrypt.h@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/alaminse/" class="contact__link" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/al-amin" class="contact__link" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              GitHub
+            </a>
+          </div>
+          <p class="contact__availability">
+            <span class="contact__dot" aria-hidden="true"></span>
+            Open to opportunities — Munich, Germany
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__copy">&copy; 2026 Al Amin. Built with HTML, CSS &amp; vanilla JS.</p>
+        <div class="footer__links">
+          <a href="https://github.com/al-amin" class="footer__link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/alaminse/" class="footer__link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
 </html>
